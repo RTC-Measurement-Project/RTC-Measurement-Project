@@ -1,0 +1,3 @@
+caller: Windows PC, local ip (10.0.0.191), room host
+receiver: MacBook Pro, local ip (10.0.0.236), first leave room
+both: Zoom app, Wi-Fi network at home, no IP block

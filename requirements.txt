@@ -1,0 +1,8 @@
+selenium
+pandas
+pyshark
+matplotlib
+numpy
+netifaces
+geoip2
+bs4

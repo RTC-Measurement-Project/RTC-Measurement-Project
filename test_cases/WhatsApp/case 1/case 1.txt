@@ -1,0 +1,31 @@
+Caller: mobile app, iPhone, wifi at home (10.0.0.140), enable local network
+Receiver: mobile app, iPhone, wifi at home (10.0.0.243), enable local network
+
+
+time_points = [
+    "Caller initiates the call.",
+    "Receiver takes the call.",
+    "Caller closes the camera.",
+    "Caller reopens the camera.",
+    "Caller switches to cellular network.",
+    "Caller switches back to wifi.",
+    "Caller and Receiver leave the call.",
+]
+
+Summary:
+2023-07-29 20:38:56.757298: Caller initiates the call.
+2023-07-29 20:39:02.758320: Receiver takes the call.
+2023-07-29 20:39:15.538135: Caller closes the camera.
+2023-07-29 20:39:20.300534: Caller reopens the camera.
+2023-07-29 20:39:25.143681: Caller switches to cellular network.
+2023-07-29 20:39:33.961743: Caller switches back to wifi.
+2023-07-29 20:39:44.301309: Caller and Receiver leave the call.
+
+Filter:
+(frame.time >= "2023-07-29 20:38:56.257298" and frame.time <= "2023-07-29 20:39:42.801309")
+
+Caller:
+(ip.addr == 10.0.0.243 or ipv6.addr == 2601:19b:80:c980:b9f5:36cd:8ee8:2b43 or ip.addr == 31.13.71.48 or ip.addr == 31.13.80.50 or ip.addr == 157.240.26.52 or ip.addr == 157.240.244.62 or ip.addr == 157.240.245.62 or ip.addr == 157.240.249.61 or ipv6.addr == 2a03:2880:f20e:c3:face:b00c:0:177 or ipv6.addr == 2a03:2880:f212:c3:face:b00c:0:177 or ipv6.addr == 2a03:2880:f23a:c4:face:b00c:0:177 or ipv6.addr == 2a03:2880:f271:c0:face:b00c:0:177 or ipv6.addr == 2a03:2880:f272:c0:face:b00c:0:177 or ipv6.addr == 2a03:2880:f272:c6:face:b00c:0:7260)
+
+Receiver:
+(ip.addr == 10.0.0.140 or ip.addr == 10.75.226.255 or ipv6.addr == 2601:19b:80:c980:cd39:33e4:2a25:14c5 or ipv6.addr == 2601:19b:80:c980:f1bc:9a6a:f889:6bb4 or ip.addr == 31.13.71.48 or ip.addr == 31.13.80.50 or ip.addr == 157.240.26.52 or ip.addr == 157.240.244.62 or ip.addr == 157.240.245.62 or ipv6.addr == 2a03:2880:f20e:c3:face:b00c:0:177 or ipv6.addr == 2a03:2880:f212:c3:face:b00c:0:177 or ipv6.addr == 2a03:2880:f23a:c4:face:b00c:0:177 or ipv6.addr == 2a03:2880:f271:c0:face:b00c:0:177 or ipv6.addr == 2a03:2880:f272:c0:face:b00c:0:177 or ipv6.addr == 2a03:2880:f272:c6:face:b00c:0:7260)

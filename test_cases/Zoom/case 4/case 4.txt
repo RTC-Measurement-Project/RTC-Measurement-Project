@@ -1,0 +1,51 @@
+Client A: mobile app, iPhone, wifi at home (10.0.0.140), enable local network
+Client B: mobile app, iPad, wifi at home (10.0.0.251), enable local network
+Client C: desktop app, Macbook, wifi at home (10.0.0.236), block ip address
+
+time_points = [
+    "Client A initiates a meeting room and shares a link with Client B and Client C.",
+    "Client B joins the room via the link.",
+    "Client C joins the room via the link.",
+    "Client A closes the camera.",
+    "Client A reopens the camera.",
+    "Client A switches to cellular network.",
+    "Client A leaves the room and assigns Client B to be host.",
+    "Client A rejoins the room.",
+    "Client A switches back to wifi.",
+    "Client C leaves the room.",
+    "Client C initiates a new meeting room and shares a link with Client A and Client B.",
+    "Client A leaves the old room.",
+    "Client A joins the new room via the link.",
+    "Client A switches to the old room via the old link.",
+    "Client A switches to the new room via the new link.",
+    "Client B leaves and ends the old room.",
+    "Client B joins the new room via the link.",
+    "Client A leaves the new room.",
+    "Client B leaves the new room.",
+    "Client C leaves and ends the new room."
+]
+
+Summary:
+2023-08-28 14:14:44.130825: Client A initiates a meeting room and shares a link with Client B and Client C.
+2023-08-28 14:15:14.250106: Client B joins the room via the link.
+2023-08-28 14:15:30.115375: Client C joins the room via the link.
+2023-08-28 14:15:39.362065: Client A closes the camera.
+2023-08-28 14:15:46.311103: Client A reopens the camera.
+2023-08-28 14:15:50.161674: Client A switches to cellular network.
+2023-08-28 14:16:02.214684: Client A leaves the room and assigns Client B to be host.
+2023-08-28 14:16:16.687685: Client A rejoins the room.
+2023-08-28 14:16:27.971414: Client A switches back to wifi.
+2023-08-28 14:16:41.946582: Client C leaves the room.
+2023-08-28 14:16:47.869630: Client C initiates a new meeting room and shares a link with Client A and Client B.
+2023-08-28 14:17:04.098601: Client A leaves the old room.
+2023-08-28 14:17:14.305413: Client A joins the new room via the link.
+2023-08-28 14:17:46.419663: Client A switches to the old room via the old link.
+2023-08-28 14:18:08.162375: Client A switches to the new room via the new link.
+2023-08-28 14:18:23.038335: Client B leaves and ends the old room.
+2023-08-28 14:18:35.042044: Client B joins the new room via the link.
+2023-08-28 14:18:51.220378: Client A leaves the new room.
+2023-08-28 14:18:58.474647: Client B leaves the new room.
+2023-08-28 14:19:05.650208: Client C leaves and ends the new room.
+
+Filter:
+(frame.time >= "2023-08-28 14:14:43.630825" and frame.time <= "2023-08-28 14:19:06.150208")

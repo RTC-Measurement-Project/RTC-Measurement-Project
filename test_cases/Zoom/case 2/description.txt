@@ -1,0 +1,14 @@
+caller: iPhone, local ip (10.239.19.254), room host
+receiver: iPad, local ip (10.239.58.219), first leave room
+both: Zoom app, Wi-Fi network at school, no local network block
+
+Summary:
+caller start time:  2023-07-12 19:28:52.174486
+receiver start time:  2023-07-12 19:29:22.587774
+receiver end time:  2023-07-12 19:29:54.324120
+caller end time:  2023-07-12 19:30:03.944571
+
+Filter:
+caller: (frame.time >= "2023-07-12 19:28:51.674486" and frame.time <= "2023-07-12 19:30:04.444571")
+receiver: (frame.time >= "2023-07-12 19:29:22.087774" and frame.time <= "2023-07-12 19:29:54.824120")
+

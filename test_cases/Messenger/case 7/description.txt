@@ -1,0 +1,3 @@
+caller: iPhone, account (samqiupeng), local ip (10.239.204.154)
+receiver: iPad, account (kutousam), local ip (10.239.58.219)
+both: Messenger app, Wi-Fi network at school, no ip block

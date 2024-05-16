@@ -1,0 +1,17 @@
+caller: iPhone, account (webrtctest001), local ip (10.239.19.254)
+receiver: iPad, account (webrtctest002), local ip (10.239.58.219), rejoin call 2 times
+both: Discord app, Wi-Fi network at school, no local network block
+
+Summary:
+caller start time:  2023-07-12 18:53:47.671313
+receiver start time:  2023-07-12 18:53:55.215305
+receiver leave 1:  2023-07-12 18:54:04.068847
+receiver rejoin 1:  2023-07-12 18:54:07.997238
+receiver leave 2:  2023-07-12 18:54:13.297732
+receiver rejoin 2:  2023-07-12 18:54:18.044734
+receiver end time:  2023-07-12 18:54:23.991644
+caller end time:  2023-07-12 18:54:29.723120
+
+Filter:
+caller: (frame.time >= "2023-07-12 18:53:47.171313" and frame.time <= "2023-07-12 18:54:30.223120")
+receiver: (frame.time >= "2023-07-12 18:53:54.715305" and frame.time <= "2023-07-12 18:54:24.491644")

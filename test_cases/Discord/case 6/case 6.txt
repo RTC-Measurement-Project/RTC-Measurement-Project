@@ -1,0 +1,51 @@
+Client A: mobile app, iPhone, wifi at home (10.0.0.140), disable local network
+Client B: mobile app, iPad, wifi at home (10.0.0.251), disable local network
+Client C: desktop app, Macbook, wifi at home (10.0.0.236), block ip address
+
+time_points = [
+    "Client A joins a channel and opens the camera.",
+    "Client B joins the channel and opens the camera.",
+    "Client C joins the channel and opens the camera.",
+    "Client A closes the camera.",
+    "Client A reopens the camera.",
+    "Client A switches to cellular network.",
+    "Client A leaves the channel.",
+    "Client A rejoins the channel.",
+    "Client A switches back to wifi.",
+    "Client C leaves the channel.",
+    "Client C joins a new channel.",
+    "Client A leaves the old channel.",
+    "Client A joins the new channel.",
+    "Client A switches to the old channel.",
+    "Client A switches to the new channel.",
+    "Client B leaves the old channel.",
+    "Client B joins the new channel.",
+    "Client A leaves the new channel.",
+    "Client B leaves the new channel.",
+    "Client C leaves the new channel."
+]
+
+Summary:
+2023-07-21 14:04:53.485252: Client A joins a channel and opens the camera.
+2023-07-21 14:05:00.400501: Client B joins the channel and opens the camera.
+2023-07-21 14:05:08.963644: Client C joins the channel and opens the camera.
+2023-07-21 14:05:21.390960: Client A closes the camera.
+2023-07-21 14:05:24.515828: Client A reopens the camera.
+2023-07-21 14:05:30.711330: Client A switches to cellular network.
+2023-07-21 14:05:36.741866: Client A leaves the channel.
+2023-07-21 14:05:40.989234: Client A rejoins the channel.
+2023-07-21 14:05:47.953252: Client A switches back to wifi.
+2023-07-21 14:05:59.274287: Client C leaves the channel.
+2023-07-21 14:06:03.124823: Client C joins a new channel.
+2023-07-21 14:06:13.084848: Client A leaves the old channel.
+2023-07-21 14:06:18.369571: Client A joins the new channel.
+2023-07-21 14:06:33.022915: Client A switches to the old channel.
+2023-07-21 14:06:40.666297: Client A switches to the new channel.
+2023-07-21 14:06:47.847745: Client B leaves the old channel.
+2023-07-21 14:06:52.224453: Client B joins the new channel.
+2023-07-21 14:07:00.842350: Client A leaves the new channel.
+2023-07-21 14:07:05.420116: Client B leaves the new channel.
+2023-07-21 14:07:08.311687: Client C leaves the new channel.
+
+Filter:
+(frame.time >= "2023-07-21 14:04:52.985252" and frame.time <= "2023-07-21 14:07:08.811687")

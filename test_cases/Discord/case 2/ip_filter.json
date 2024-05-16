@@ -1,0 +1,4 @@
+{
+    "caller": "ip.src == 66.22.212.135 or ip.dst == 66.22.212.135 or ip.src == 73.16.29.250 or ip.dst == 73.16.29.250 or ip.src == 10.0.0.33 or ip.dst == 10.0.0.33",
+    "receiver": "ip.src == 10.0.0.191 or ip.dst == 10.0.0.191 or ip.src == 66.22.212.135 or ip.dst == 66.22.212.135 or ip.src == 73.16.29.250 or ip.dst == 73.16.29.250"
+}

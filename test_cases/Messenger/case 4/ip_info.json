@@ -1,0 +1,213 @@
+{
+    "128.197.29.224": {
+        "26574 (related)": {
+            "type": "relay",
+            "client": "caller"
+        },
+        "32808": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "0.0.0.0_0"
+        },
+        "31972 (related)": {
+            "type": "relay",
+            "client": "caller"
+        },
+        "32686": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "2",
+            "protocol": "udp",
+            "remote": "0.0.0.0_0"
+        },
+        "25047 (related)": {
+            "type": "relay",
+            "client": "caller"
+        },
+        "20067": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "0.0.0.0_0"
+        },
+        "7916 (related)": {
+            "type": "relay",
+            "client": "caller"
+        },
+        "2150 (related)": {
+            "type": "relay",
+            "client": "caller"
+        },
+        "8381 (related)": {
+            "type": "relay",
+            "client": "caller"
+        },
+        "7916": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "0.0.0.0_0"
+        },
+        "46856": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "2",
+            "protocol": "udp",
+            "remote": "0.0.0.0_0"
+        },
+        "30880 (related)": {
+            "type": "relay",
+            "client": "caller"
+        },
+        "3740 (related)": {
+            "type": "relay",
+            "client": "caller"
+        },
+        "2150": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "0.0.0.0_0"
+        },
+        "46856 (related)": {
+            "type": "relay",
+            "client": "caller"
+        }
+    },
+    "204.8.153.51": {
+        "59850": {
+            "type": "srflx",
+            "client": "receiver",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "0.0.0.0_0"
+        },
+        "59850 (related)": {
+            "type": "relay",
+            "client": "receiver"
+        }
+    },
+    "204.8.153.53": {
+        "30425 (related)": {
+            "type": "relay",
+            "client": "receiver"
+        },
+        "30403 (related)": {
+            "type": "relay",
+            "client": "receiver"
+        }
+    },
+    "10.239.161.0": {
+        "51153 (related)": {
+            "type": "prflx",
+            "client": "caller"
+        },
+        "51153": {
+            "type": "host",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": ""
+        },
+        "51155": {
+            "type": "host",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": ""
+        },
+        "51157": {
+            "type": "host",
+            "media": "2",
+            "protocol": "udp",
+            "remote": ""
+        }
+    },
+    "157.240.245.58": {
+        "57004": {
+            "type": "relay",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.224_2150"
+        },
+        "53229": {
+            "type": "relay",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "128.197.29.224_7916"
+        },
+        "53474": {
+            "type": "relay",
+            "media": "2",
+            "protocol": "udp",
+            "remote": "128.197.29.224_46856"
+        },
+        "55649": {
+            "type": "relay",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.224_8381"
+        },
+        "53136": {
+            "type": "relay",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "128.197.29.224_3740"
+        },
+        "53277": {
+            "type": "relay",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.224_26574"
+        },
+        "58115": {
+            "type": "relay",
+            "media": "2",
+            "protocol": "udp",
+            "remote": "128.197.29.224_25047"
+        },
+        "51526": {
+            "type": "relay",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "128.197.29.224_30880"
+        },
+        "56077": {
+            "type": "relay",
+            "media": "2",
+            "protocol": "udp",
+            "remote": "128.197.29.224_31972"
+        }
+    },
+    "10.192.48.247": {
+        "61659": {
+            "type": "host",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": ""
+        }
+    },
+    "157.240.240.58": {
+        "55152": {
+            "type": "relay",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "204.8.153.51_59850"
+        },
+        "56273": {
+            "type": "relay",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "204.8.153.53_30425"
+        },
+        "53209": {
+            "type": "relay",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "204.8.153.53_30403"
+        }
+    }
+}

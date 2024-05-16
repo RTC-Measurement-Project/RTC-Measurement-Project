@@ -1,0 +1,3 @@
+caller: iPhone, account (webrtctest001), local ip (10.0.0.140)
+receiver: iPad, account (webrtctest002), local ip (10.0.0.251), join call 3 times
+both: Discord app, Wi-Fi network at home, no local network block

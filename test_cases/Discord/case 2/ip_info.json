@@ -1,0 +1,48 @@
+{
+    "66.22.212.135": {
+        "50006": {
+            "type": "host",
+            "client": "caller"
+        }
+    },
+    "10.0.0.191": {
+        "60477 (related)": {
+            "type": "prflx",
+            "client": "caller"
+        },
+        "60477": {
+            "type": "host",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": ""
+        }
+    },
+    "29f1b8af-c518-428c-93a0-16b524aba623.local": {
+        "60478": {
+            "type": "host",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": ""
+        }
+    },
+    "10.0.0.33": {
+        "57986 (related)": {
+            "type": "prflx",
+            "client": "receiver"
+        },
+        "57986": {
+            "type": "host",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": ""
+        }
+    },
+    "f3a0614b-d540-46b3-b1ef-d74eab8dfd2d.local": {
+        "57987": {
+            "type": "host",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": ""
+        }
+    }
+}

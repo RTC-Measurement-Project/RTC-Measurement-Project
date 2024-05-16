@@ -1,0 +1,7 @@
+caller is a Windows PC using kutousam@gmail.com on Wi-Fi
+['192.168.220.1', '192.168.138.1', '10.0.0.191', '127.0.0.1'] | ['fe80::64f4:6200:211b:19ff%13', 'fe80::b37:dda5:c987:70be%14', 'fe80::27a2:8fd3:fdf:658f%16', 'fe80::a622:dbe0:6928:5f72%12', 'fe80::307:9947:fa15:59a3%7', 'fe80::c7c1:3a94:a928:1022%2', '2601:19b:80:c980::a085', '2601:19b:80:c980:92e0:23f2:875e:64d', '2601:19b:80:c980:8cbc:eac8:baca:e8f8', 'fe80::4c45:bbd9:44a1:d83%10', 'fe80::381d:c2c7:9aae:f8b5%17', '::1']
+
+receiver is a Windows laptop using samqiupeng@hotmail.com on Wi-Fi
+['10.0.0.33', '127.0.0.1'] | ['fe80::d5ef:6756:d999:26ed%8', 'fe80::1405:9c9c:a958:d5e7%15', '2601:19b:80:c980::1345', '2601:19b:80:c980:6c98:dfdb:d585:3788', '2601:19b:80:c980:7474:46df:3ce7:d9a6', 'fe80::7f69:ec23:763a:5b32%11', 'fe80::6a5f:dd40:172c:a411%2', '::1']
+
+same Wi-Fi network at home

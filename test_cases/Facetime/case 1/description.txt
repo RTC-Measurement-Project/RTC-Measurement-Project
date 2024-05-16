@@ -1,0 +1,15 @@
+caller: iPhone, local ip (10.239.19.254)
+receiver: iPad, local ip (10.239.58.219)
+both: FaceTime app, Wi-Fi network at school, no local network block
+
+Summary:
+caller start time:  2023-07-12 19:08:37.272236
+receiver start time:  2023-07-12 19:08:45.742431
+receiver end time:  2023-07-12 19:08:53.013740
+caller end time:  2023-07-12 19:08:57.476845
+
+Filter:
+caller: (frame.time >= "2023-07-12 19:08:36.772236" and frame.time <= "2023-07-12 19:08:57.976845")
+receiver: (frame.time >= "2023-07-12 19:08:45.242431" and frame.time <= "2023-07-12 19:08:53.513740")
+
+Note: start time is recorded when hitting "join" button instead of clicking the FaceTime link

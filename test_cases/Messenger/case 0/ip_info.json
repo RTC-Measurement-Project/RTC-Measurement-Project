@@ -1,0 +1,164 @@
+{
+    "157.240.245.58": {
+        "56442": {
+            "type": "relay",
+            "client": "caller",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.249_52306"
+        },
+        "57182": {
+            "type": "relay",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "128.197.29.249_42250"
+        },
+        "56180": {
+            "type": "relay",
+            "client": "caller",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.249_5193"
+        },
+        "53978": {
+            "type": "relay",
+            "client": "caller",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.249_28071"
+        },
+        "52465": {
+            "type": "relay",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "128.197.29.249_11161"
+        },
+        "55860": {
+            "type": "relay",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "128.197.29.249_36960"
+        },
+        "56078": {
+            "type": "relay",
+            "client": "receiver",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.225_38137"
+        },
+        "58341": {
+            "type": "relay",
+            "client": "receiver",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.225_15914"
+        },
+        "53239": {
+            "type": "relay",
+            "client": "receiver",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "128.197.29.225_3405"
+        }
+    },
+    "10.239.233.249": {
+        "62232": {
+            "type": "host",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": ""
+        },
+        "52105": {
+            "type": "host",
+            "client": "caller",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": ""
+        },
+        "9": {
+            "type": "host",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "tcp",
+            "remote": ""
+        }
+    },
+    "128.197.29.249": {
+        "36960": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "10.239.233.249_62232"
+        },
+        "28071": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "10.239.233.249_52105"
+        },
+        "50060": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "10.239.233.249_52105"
+        },
+        "38743": {
+            "type": "srflx",
+            "client": "caller",
+            "media": "1_video",
+            "protocol": "udp",
+            "remote": "10.239.233.249_62232"
+        },
+        "25754": {
+            "type": "prflx",
+            "client": "caller"
+        }
+    },
+    "128.197.29.225": {
+        "28023": {
+            "type": "srflx",
+            "client": "receiver",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "10.239.25.33_55902"
+        },
+        "15914": {
+            "type": "srflx",
+            "client": "receiver",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": "10.239.25.33_55902"
+        },
+        "36307": {
+            "type": "prflx",
+            "client": "receiver"
+        },
+        "46635": {
+            "type": "prflx",
+            "client": "receiver"
+        }
+    },
+    "10.239.25.33": {
+        "55902": {
+            "type": "host",
+            "client": "receiver",
+            "media": "0_audio",
+            "protocol": "udp",
+            "remote": ""
+        },
+        "9": {
+            "type": "host",
+            "client": "receiver",
+            "media": "0_audio",
+            "protocol": "tcp",
+            "remote": ""
+        }
+    }
+}
