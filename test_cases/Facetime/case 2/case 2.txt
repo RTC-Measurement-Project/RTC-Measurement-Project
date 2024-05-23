@@ -3,9 +3,9 @@ Receiver: mobile app, iPad, wifi at home
 
 time_points = [
     "Caller initiates a call link and joins the call.",
-    "Receiver joins the call.",
-    "Receiver closes the camera.",
-    "Receiver reopens the camera.",
+    "Callee joins the call.",
+    "Callee closes the camera.",
+    "Callee reopens the camera.",
     "Caller leaves the call.",
     "Caller rejoins the call.",
     "Caller switches to cellular network.",
@@ -13,26 +13,22 @@ time_points = [
     "Caller rejoins the call.",
     "Caller switches back to wifi.",
     "Caller leaves the call.",
-    "Receiver leaves the call."
+    "Callee leaves the call."
 ]
 
 Summary:
-2023-07-21 15:24:12.374739: Caller initiates a call link and joins the call.
-2023-07-21 15:24:17.403635: Receiver joins the call.
-2023-07-21 15:24:22.147377: Receiver closes the camera.
-2023-07-21 15:24:27.139926: Receiver reopens the camera.
-2023-07-21 15:24:30.953757: Caller leaves the call.
-2023-07-21 15:24:35.707311: Caller rejoins the call.
-2023-07-21 15:24:39.187298: Caller switches to cellular network.
-2023-07-21 15:24:47.573463: Caller leaves the call.
-2023-07-21 15:24:51.028334: Caller rejoins the call.
-2023-07-21 15:24:56.174909: Caller switches back to wifi.
-2023-07-21 15:25:05.214197: Caller leaves the call.
-2023-07-21 15:25:09.245354: Receiver leaves the call.
+2024-05-22 23:02:34.769103: Caller initiates a call link and joins the call.
+2024-05-22 23:02:45.583669: Callee joins the call.
+2024-05-22 23:02:58.074064: Callee closes the camera.
+2024-05-22 23:03:08.266223: Callee reopens the camera.
+2024-05-22 23:03:17.540208: Caller leaves the call.
+2024-05-22 23:03:27.782335: Caller rejoins the call.
+2024-05-22 23:03:40.410729: Caller switches to cellular network.
+2024-05-22 23:03:52.476964: Caller leaves the call.
+2024-05-22 23:04:03.624792: Caller rejoins the call.
+2024-05-22 23:04:16.317463: Caller switches back to wifi.
+2024-05-22 23:04:28.398684: Caller leaves the call.
+2024-05-22 23:04:38.635498: Callee leaves the call.
 
 Filter:
-(frame.time >= "2023-07-21 15:24:11.874739" and frame.time <= "2023-07-21 15:25:09.745354")
-
-Caller: (ip.addr == 10.0.0.251 or ip.addr == 17.138.144.4 or ip.addr == 17.145.52.65 or ip.addr == 17.248.131.4 or ip.addr == 17.249.192.154 or ip.addr == 17.57.144.119 or ip.addr == 17.57.147.4 or ip.addr == 17.57.147.6 or ip.addr == 17.57.147.7 or ip.addr == 17.57.172.6 or ipv6.addr == 2601:19b:80:c980:1486:4e93:69f:b88 or ipv6.addr == 2601:19b:80:c980:f5c0:9926:1058:829f or ipv6.addr == 2620:149:a09:f100::4 or ipv6.addr == 2620:149:a41:100::4 or ipv6.addr == 2620:149:a41:100::9 or ipv6.addr == 2620:149:a41:106::6 or ipv6.addr == 2620:149:a41:107::a or ipv6.addr == 2620:149:a41:109::b)
-
-Receiver: (ip.addr == 10.0.0.140 or ip.addr == 10.75.226.255 or ip.addr == 17.138.144.4 or ip.addr == 17.145.52.65 or ip.addr == 17.248.131.4 or ip.addr == 17.249.192.154 or ip.addr == 17.57.144.119 or ip.addr == 17.57.147.4 or ip.addr == 17.57.147.6 or ip.addr == 17.57.147.7 or ip.addr == 17.57.172.6 or ipv6.addr == 2601:19b:80:c980:75f9:8307:c0bb:ab67 or ipv6.addr == 2601:19b:80:c980:a10b:c687:f529:357a or ipv6.addr == 2620:149:a09:f100::4 or ipv6.addr == 2620:149:a41:100::4 or ipv6.addr == 2620:149:a41:100::9 or ipv6.addr == 2620:149:a41:106::6 or ipv6.addr == 2620:149:a41:107::a or ipv6.addr == 2620:149:a41:109::b)
+(frame.time >= "2024-05-22 23:02:34.269103" and frame.time <= "2024-05-22 23:04:39.135498")

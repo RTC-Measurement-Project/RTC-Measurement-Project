@@ -1,0 +1,42 @@
+Caller: mobile app, iPhone, wifi at home (10.0.0.140), disable local network
+Receiver: mobile app, iPad, wifi at home (10.0.0.251), disable local network
+
+
+time_points = [
+    "Caller initiates the call.",
+    "Receiver takes the call.",
+    "Caller closes the camera.",
+    "Caller reopens the camera.",
+    "Caller switches to cellular network.",
+    "Caller switches back to wifi.",
+    "Caller and Receiver leave the call.",
+]
+
+Summary:
+2023-07-20 18:46:06.901577: Caller initiates the call.
+2023-07-20 18:46:16.177509: Receiver takes the call.
+2023-07-20 18:46:37.561765: Caller closes the camera.
+2023-07-20 18:46:40.146784: Caller reopens the camera.
+2023-07-20 18:46:48.210525: Caller switches to cellular network.
+2023-07-20 18:46:57.308654: Caller switches back to wifi.
+2023-07-20 18:47:06.964608: Caller and Receiver leave the call.
+
+Filter:
+(frame.time >= "2023-07-20 18:46:06.901577" and frame.time <= "2023-07-20 18:46:16.177509"): Caller initiates the call.
+(frame.time >= "2023-07-20 18:46:16.177509" and frame.time <= "2023-07-20 18:46:37.561765"): Receiver takes the call.
+(frame.time >= "2023-07-20 18:46:37.561765" and frame.time <= "2023-07-20 18:46:40.146784"): Caller closes the camera.
+(frame.time >= "2023-07-20 18:46:40.146784" and frame.time <= "2023-07-20 18:46:48.210525"): Caller reopens the camera.
+(frame.time >= "2023-07-20 18:46:48.210525" and frame.time <= "2023-07-20 18:46:57.308654"): Caller switches to cellular network.
+(frame.time >= "2023-07-20 18:46:57.308654" and frame.time <= "2023-07-20 18:47:06.964608"): Caller switches back to wifi.
+(frame.time >= "2023-07-20 18:47:06.964608"): Caller and Receiver leave the call.
+
+
+
+Caller: (ipv6.addr == 2a03:2880:f07e:17:face:b00c:0:24d9 or ipv6.addr == 2a03:2880:f212:1c6:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f212:ca:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f272:ce:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f272:d0:face:b00c:0:553e or ipv6.addr == 2a03:2880:f07e:e:face:b00c:0:2 or ipv6.addr == 2a03:2880:f07e:12:face:b00c:0:8e or ipv6.addr == 2a03:2880:f07e:d:face:b00c:0:6206 or ipv6.addr == 2a03:2880:f031:6:face:b00c:0:24d9 or ip.addr == 157.240.241.53 or ip.addr == 157.240.245.22 or ip.addr == 157.240.245.56 or ip.addr == 157.240.245.58 or ip.addr == 31.13.71.128 or ip.addr == 157.240.22.19 or ip.addr == 157.240.22.33 or ip.addr == 157.240.245.12 or ip.addr == 157.240.245.17 or ip.addr == 157.240.254.12 or ip.addr == 31.13.66.4 or ip.addr == 10.0.0.251 or ipv6.addr == 2601:19b:80:c980:1486:4e93:69f:b88 or ipv6.addr == 2a03:2880:f172:86:face:b00c:0:38d9 or ip.addr == 73.16.29.250 or ip.addr == 107.122.192.98 or ipv6.addr == 2a03:2880:f07e:9:face:b00c:0:3) and (frame.time >= "")
+
+Receiver: (ipv6.addr == 2a03:2880:f07e:17:face:b00c:0:24d9 or ipv6.addr == 2a03:2880:f212:1c6:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f212:ca:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f272:ce:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f272:d0:face:b00c:0:553e or ipv6.addr == 2a03:2880:f07e:e:face:b00c:0:2 or ipv6.addr == 2a03:2880:f07e:12:face:b00c:0:8e or ipv6.addr == 2a03:2880:f07e:d:face:b00c:0:6206 or ipv6.addr == 2a03:2880:f031:6:face:b00c:0:24d9 or ipv6.addr == 2409:8180:404:26aa:dc6a:38da:cfaf:fd09 or ipv6.addr == 2600:381:435a:b456:d0cc:4798:24be:fc67 or ipv6.addr == 2601:19b:80:c980:2533:49af:4635:af35 or ipv6.addr == 2601:19b:80:c980:956f:39c4:4577:2e51 or ipv6.addr == fd74:6572:6d6e:7573:c:42ea:30d3:3fe7 or ip.addr == 157.240.241.53 or ip.addr == 157.240.245.22 or ip.addr == 157.240.245.56 or ip.addr == 157.240.245.58 or ip.addr == 31.13.71.128 or ip.addr == 157.240.22.19 or ip.addr == 157.240.22.33 or ip.addr == 157.240.245.12 or ip.addr == 157.240.245.17 or ip.addr == 157.240.254.12 or ip.addr == 31.13.66.4 or ip.addr == 10.0.0.140 or ip.addr == 10.75.226.255 or ip.addr == 192.0.0.6 or ipv6.addr == fd74:6572:6d6e:7573:d:42ea:30d3:3fe7 or ipv6.addr == 2a03:2880:f172:86:face:b00c:0:38d9 or ip.addr == 73.16.29.250 or ip.addr == 107.122.192.98 or ipv6.addr == 2a03:2880:f07e:9:face:b00c:0:3) and (frame.time >= "")
+
+Caller cleaned: (ip.addr == 10.0.0.251 or ip.addr == 157.240.22.33 or ip.addr == 157.240.241.53 or ip.addr == 157.240.245.22 or ip.addr == 157.240.245.56 or ip.addr == 157.240.245.58 or ipv6.addr == 2601:19b:80:c980:1486:4e93:69f:b88 or ipv6.addr == 2a03:2880:f031:6:face:b00c:0:24d9 or ipv6.addr == 2a03:2880:f07e:17:face:b00c:0:24d9 or ipv6.addr == 2a03:2880:f212:1c6:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f212:ca:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f272:ce:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f272:d0:face:b00c:0:553e or ip.addr == 31.13.71.128 or ip.addr == 73.16.29.250 or ip.addr == 107.122.192.98) and (frame.time >= "")
+
+Receiver cleaned: (ip.addr == 10.0.0.140 or ip.addr == 10.75.226.255 or ip.addr == 157.240.22.33 or ip.addr == 157.240.241.53 or ip.addr == 157.240.245.22 or ip.addr == 157.240.245.56 or ip.addr == 157.240.245.58 or ip.addr == 192.0.0.6 or ipv6.addr == 2409:8180:404:26aa:dc6a:38da:cfaf:fd09 or ipv6.addr == 2600:381:435a:b456:d0cc:4798:24be:fc67 or ipv6.addr == 2601:19b:80:c980:2533:49af:4635:af35 or ipv6.addr == 2601:19b:80:c980:956f:39c4:4577:2e51 or ipv6.addr == 2a03:2880:f031:6:face:b00c:0:24d9 or ipv6.addr == 2a03:2880:f07e:17:face:b00c:0:24d9 or ipv6.addr == 2a03:2880:f212:1c6:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f212:ca:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f272:ce:face:b00c:0:74fd or ipv6.addr == 2a03:2880:f272:d0:face:b00c:0:553e or ip.addr == 31.13.71.128 or ipv6.addr == fd74:6572:6d6e:7573:c:42ea:30d3:3fe7 or ipv6.addr == fd74:6572:6d6e:7573:d:42ea:30d3:3fe7 or ip.addr == 73.16.29.250 or ip.addr == 107.122.192.98) and (frame.time >= "")
+

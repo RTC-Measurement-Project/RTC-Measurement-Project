@@ -1,2 +1,0 @@
-caller is a Windows PC using kutousam@gmail.com on Wi-Fi
-receiver is a Macbook using samqiupeng@hotmail.com on cellular network

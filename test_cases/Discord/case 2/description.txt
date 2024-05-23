@@ -1,3 +1,0 @@
-caller is a Windows PC on Wi-Fi
-receiver is a Windows PC on Wi-Fi
-same Wi-Fi network at home

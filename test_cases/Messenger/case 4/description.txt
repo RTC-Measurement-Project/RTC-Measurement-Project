@@ -1,4 +1,0 @@
-caller is a Windows PC using kutousam@gmail.com on Wi-Fi
-receiver is a Windows PC using samqiupeng@hotmail.com on Wi-Fi
-same Wi-Fi network in school
-all IPv4

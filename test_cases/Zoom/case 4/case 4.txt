@@ -1,51 +1,34 @@
-Client A: mobile app, iPhone, wifi at home (10.0.0.140), enable local network
-Client B: mobile app, iPad, wifi at home (10.0.0.251), enable local network
-Client C: desktop app, Macbook, wifi at home (10.0.0.236), block ip address
+Caller: mobile app, iPhone, wifi at home (192.168.0.27), disable local network
+Callee: mobile app, iPad, wifi at home (192.168.0.31), disable local network
 
 time_points = [
-    "Client A initiates a meeting room and shares a link with Client B and Client C.",
-    "Client B joins the room via the link.",
-    "Client C joins the room via the link.",
-    "Client A closes the camera.",
-    "Client A reopens the camera.",
-    "Client A switches to cellular network.",
-    "Client A leaves the room and assigns Client B to be host.",
-    "Client A rejoins the room.",
-    "Client A switches back to wifi.",
-    "Client C leaves the room.",
-    "Client C initiates a new meeting room and shares a link with Client A and Client B.",
-    "Client A leaves the old room.",
-    "Client A joins the new room via the link.",
-    "Client A switches to the old room via the old link.",
-    "Client A switches to the new room via the new link.",
-    "Client B leaves and ends the old room.",
-    "Client B joins the new room via the link.",
-    "Client A leaves the new room.",
-    "Client B leaves the new room.",
-    "Client C leaves and ends the new room."
+    "Caller initiates the call and shares a link to callee.",
+    "Callee joins the call via the link.",
+    "Caller closes the camera.",
+    "Caller reopens the camera.",
+    "Caller leaves the call and assigns callee to be host.",
+    "Caller rejoins the call.",
+    "Caller switches to cellular network.",
+    "Caller leaves the call.",
+    "Caller rejoins the call.",
+    "Caller switches back to wifi.",
+    "Caller leaves the call.",
+    "Callee leaves and ends the call."
 ]
 
 Summary:
-2023-08-28 14:14:44.130825: Client A initiates a meeting room and shares a link with Client B and Client C.
-2023-08-28 14:15:14.250106: Client B joins the room via the link.
-2023-08-28 14:15:30.115375: Client C joins the room via the link.
-2023-08-28 14:15:39.362065: Client A closes the camera.
-2023-08-28 14:15:46.311103: Client A reopens the camera.
-2023-08-28 14:15:50.161674: Client A switches to cellular network.
-2023-08-28 14:16:02.214684: Client A leaves the room and assigns Client B to be host.
-2023-08-28 14:16:16.687685: Client A rejoins the room.
-2023-08-28 14:16:27.971414: Client A switches back to wifi.
-2023-08-28 14:16:41.946582: Client C leaves the room.
-2023-08-28 14:16:47.869630: Client C initiates a new meeting room and shares a link with Client A and Client B.
-2023-08-28 14:17:04.098601: Client A leaves the old room.
-2023-08-28 14:17:14.305413: Client A joins the new room via the link.
-2023-08-28 14:17:46.419663: Client A switches to the old room via the old link.
-2023-08-28 14:18:08.162375: Client A switches to the new room via the new link.
-2023-08-28 14:18:23.038335: Client B leaves and ends the old room.
-2023-08-28 14:18:35.042044: Client B joins the new room via the link.
-2023-08-28 14:18:51.220378: Client A leaves the new room.
-2023-08-28 14:18:58.474647: Client B leaves the new room.
-2023-08-28 14:19:05.650208: Client C leaves and ends the new room.
+2024-05-22 22:08:46.018102: Caller initiates the call and shares a link to callee.
+2024-05-22 22:09:07.821540: Callee joins the call via the link.
+2024-05-22 22:09:27.798902: Caller closes the camera.
+2024-05-22 22:09:39.352853: Caller reopens the camera.
+2024-05-22 22:09:51.095397: Caller leaves the call and assigns callee to be host.
+2024-05-22 22:10:02.249387: Caller rejoins the call.
+2024-05-22 22:10:16.329721: Caller switches to cellular network.
+2024-05-22 22:10:30.978664: Caller leaves the call.
+2024-05-22 22:10:42.155863: Caller rejoins the call.
+2024-05-22 22:11:00.441406: Caller switches back to wifi.
+2024-05-22 22:11:15.606093: Caller leaves the call.
+2024-05-22 22:11:25.323985: Callee leaves and ends the call.
 
 Filter:
-(frame.time >= "2023-08-28 14:14:43.630825" and frame.time <= "2023-08-28 14:19:06.150208")
+(frame.time >= "2024-05-22 22:08:45.518102" and frame.time <= "2024-05-22 22:11:25.823985")

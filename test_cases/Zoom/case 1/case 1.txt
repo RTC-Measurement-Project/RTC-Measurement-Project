@@ -1,0 +1,34 @@
+Caller: mobile app, iPhone, wifi at home (192.168.0.27), disable local network
+Callee: mobile app, iPad, wifi at home (192.168.0.31), disable local network
+
+time_points = [
+    "Caller initiates the call and shares a link to callee.",
+    "Callee joins the call via the link.",
+    "Caller closes the camera.",
+    "Caller reopens the camera.",
+    "Caller leaves the call and assigns callee to be host.",
+    "Caller rejoins the call.",
+    "Caller switches to cellular network.",
+    "Caller leaves the call.",
+    "Caller rejoins the call.",
+    "Caller switches back to wifi.",
+    "Caller leaves the call.",
+    "Callee leaves and ends the call."
+]
+
+Summary:
+2024-05-22 21:53:00.943058: Caller initiates the call and shares a link to callee.
+2024-05-22 21:53:25.080112: Callee joins the call via the link.
+2024-05-22 21:53:50.453513: Caller closes the camera.
+2024-05-22 21:54:01.745180: Caller reopens the camera.
+2024-05-22 21:54:17.657023: Caller leaves the call and assigns callee to be host.
+2024-05-22 21:54:42.349433: Caller rejoins the call.
+2024-05-22 21:55:00.374000: Caller switches to cellular network.
+2024-05-22 21:55:13.496456: Caller leaves the call.
+2024-05-22 21:55:26.226760: Caller rejoins the call.
+2024-05-22 21:55:43.274471: Caller switches back to wifi.
+2024-05-22 21:55:56.876124: Caller leaves the call.
+2024-05-22 21:56:06.442600: Callee leaves and ends the call.
+
+Filter:
+(frame.time >= "2024-05-22 21:53:00.443058" and frame.time <= "2024-05-22 21:56:06.942600")

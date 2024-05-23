@@ -1,0 +1,44 @@
+Caller: mobile app, iPhone, wifi at home, enable local network
+Receiver: mobile app, iPad, wifi at home, enable local network
+
+time_points = [
+    "Caller initiates the call and shares a link to Receiver.",
+    "Receiver joins the call via the link.",
+    "Caller closes the camera.",
+    "Caller reopens the camera.",
+    "Caller leaves the call and assigns Receiver to be host.",
+    "Caller rejoins the call.",
+    "Caller switches to cellular network.",
+    "Caller leaves the call.",
+    "Caller rejoins the call.",
+    "Caller switches back to wifi.",
+    "Caller leaves the call.",
+    "Receiver leaves and ends the call."
+]
+
+Summary:
+2023-08-28 13:34:01.391062: Caller initiates the call and shares a link to Receiver.
+2023-08-28 13:34:20.405121: Receiver joins the call via the link.
+2023-08-28 13:34:39.641879: Caller closes the camera.
+2023-08-28 13:34:44.407419: Caller reopens the camera.
+2023-08-28 13:34:56.000681: Caller leaves the call and assigns Receiver to be host.
+2023-08-28 13:35:17.057614: Caller rejoins the call.
+2023-08-28 13:35:34.143481: Caller switches to cellular network.
+2023-08-28 13:35:52.200210: Caller leaves the call.
+2023-08-28 13:35:59.398100: Caller rejoins the call.
+2023-08-28 13:36:08.541967: Caller switches back to wifi.
+2023-08-28 13:36:18.110611: Caller leaves the call.
+2023-08-28 13:36:24.211809: Receiver leaves and ends the call.
+
+Filter:
+(frame.time >= "2023-08-28 13:34:00.891062" and frame.time <= "2023-08-28 13:36:24.711809")
+
+Caller:
+(ip.addr == 10.0.0.251 or ipv6.addr == 2601:19b:80:c980:513:4ef1:f103:ec8d or ip.addr == 170.114.0.198 or ip.addr == 170.114.2.47 or ip.addr == 170.114.2.55 or ip.addr == 144.195.60.213 or ip.addr == 144.195.61.213 or ip.addr == 206.247.28.213 or ip.addr == 206.247.29.194 or ip.addr == 206.247.29.213 or ip.addr == 170.114.0.20 or ip.addr == 170.114.2.97 or ipv6.addr == 2407:30c0:100:721:5e0:a704:c939:7fcd or ipv6.addr == 2407:30c0:100:723:3dcf:1f73:35e3:c6a3 or ipv6.addr == 2407:30c0:100:723:555d:5b67:27bf:6027 or ipv6.addr == 2407:30c0:100:724:ca26:83d1:bf26:93ae or ipv6.addr == 2407:30c0:100:722:5c9b:616a:7aa2:b9f9 or ipv6.addr == 2407:30c0:100:722:c0cf:cbc:2a16:495b or ipv6.addr == 2407:30c0:100:723:ab35:3bff:fc2:f45c or ipv6.addr == 2407:30c0:100:724:8886:7410:8ab5:e18f)
+
+(ip.addr == 10.0.0.251 or ip.addr == 206.247.28.213 or ip.addr == 206.247.29.194 or ip.addr == 206.247.29.213)
+
+Receiver:
+(ip.addr == 10.75.43.10 or ip.addr == 10.0.0.140 or ipv6.addr == 2601:19b:80:c980:2043:1981:529a:ec7b or ipv6.addr == 2600:381:941b:1677:a020:3ef6:6bf2:f205 or ip.addr == 170.114.0.198 or ip.addr == 170.114.2.47 or ip.addr == 170.114.2.55 or ip.addr == 144.195.60.213 or ip.addr == 144.195.61.213 or ip.addr == 206.247.28.213 or ip.addr == 206.247.29.194 or ip.addr == 206.247.29.213 or ip.addr == 170.114.0.20 or ip.addr == 170.114.2.97 or ipv6.addr == 2407:30c0:100:721:5e0:a704:c939:7fcd or ipv6.addr == 2407:30c0:100:723:3dcf:1f73:35e3:c6a3 or ipv6.addr == 2407:30c0:100:723:555d:5b67:27bf:6027 or ipv6.addr == 2407:30c0:100:724:ca26:83d1:bf26:93ae or ipv6.addr == 2407:30c0:100:722:5c9b:616a:7aa2:b9f9 or ipv6.addr == 2407:30c0:100:722:c0cf:cbc:2a16:495b or ipv6.addr == 2407:30c0:100:723:ab35:3bff:fc2:f45c or ipv6.addr == 2407:30c0:100:724:8886:7410:8ab5:e18f)
+
+(ip.addr == 10.75.43.10 or ip.addr == 10.0.0.140 or ip.addr == 206.247.28.213 or ip.addr == 206.247.29.194 or ip.addr == 206.247.29.213)
